@@ -56,7 +56,7 @@ class DoitListsController < ApplicationController
   def destroy
     @doit_list.destroy
     respond_to do |format|
-      format.html { redirect_to doit_lists_url, notice: 'Doit list was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: 'Doit list was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

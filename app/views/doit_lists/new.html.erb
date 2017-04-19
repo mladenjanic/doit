@@ -1,5 +1,9 @@
-<h1>New Doit List</h1>
+<h1 class="todo_list_title">New Doit List</h1>
 
-<%= render 'form', doit_list: @doit_list %>
+<div class="forms">
+    <%= render 'form', doit_list: @doit_list %>
+</div>
 
-<%= link_to 'Back', doit_lists_path %>
+<div class="links">
+    <%= link_to 'Back', doit_lists_path %>
+</div>
