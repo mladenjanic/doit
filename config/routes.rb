@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    
+  resources :doit_lists do
+      resources :doit_items
+  end
+  
+  root "doit_lists#index"
 end

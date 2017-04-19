@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @doit_list.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @doit_list.description %>
+</p>
+
+<div id="todo_items_wrapper">
+    <%= render @doit_list.doit_items %>
+    <div id="form">
+        <%= render "doit_items/form" %>
+    </div>
+</div>
+
+<%= link_to 'Edit', edit_doit_list_path(@doit_list) %> |
+<%= link_to 'Back', doit_lists_path %>
